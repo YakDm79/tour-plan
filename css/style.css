@@ -487,7 +487,7 @@ template {
 
 @media (max-width: 992px) {
   .container {
-    max-width: 673px;
+    max-width: 730px;
   }
   .navbar-top {
     padding-top: 30px;
@@ -495,11 +495,9 @@ template {
   }
   .navbar__search {
     margin-left: auto;
-    margin-right: 73px;
   }
   .navbar-menu {
-    padding-top: 22px;
-    padding-bottom: 22px;
+    padding: 22px 14px;
   }
   .navbar-menu__link {
     font-size: 12px;
