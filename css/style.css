@@ -414,6 +414,7 @@ template {
   text-transform: uppercase;
   font-size: 14px;
   line-height: 18px;
+  font-weight: 700;
 }
 
 .logo {
@@ -450,6 +451,7 @@ template {
   height: 100%;
   border: none;
   background-color: #EC1F46;
+  cursor: pointer;
 }
 
 .user {
@@ -485,7 +487,7 @@ template {
 
 @media (max-width: 992px) {
   .container {
-    max-width: 700px;
+    max-width: 673px;
   }
   .navbar-top {
     padding-top: 30px;
@@ -493,6 +495,7 @@ template {
   }
   .navbar__search {
     margin-left: auto;
+    margin-right: 73px;
   }
   .navbar-menu {
     padding-top: 22px;
@@ -501,6 +504,9 @@ template {
   .navbar-menu__link {
     font-size: 12px;
     line-height: 15px;
+  }
+  .logo {
+    margin-right: 47px;
   }
   .search__input {
     width: 340px;
