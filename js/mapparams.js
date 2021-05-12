@@ -10,11 +10,11 @@ function init () {
         // Параметры карты.
         {
             // Географические координаты центра отображаемой карты.
-            center: [55.76, 37.64],
+            center: [7.58, 79.86],
             // Масштаб.
             zoom: 10,
             // Тип покрытия карты: "Спутник".
-            type: 'yandex#map'
+            type: 'yandex#hybrid'
         }, {
             // Поиск по организациям.
             searchControlProvider: 'yandex#search'
@@ -23,7 +23,7 @@ function init () {
 }
 
 function setCenter () {
-    myMap.setCenter([57.767265, 40.925358]);
+    myMap.setCenter([7.582071, 79.861938]);
 }
 
 function setBounds () {
