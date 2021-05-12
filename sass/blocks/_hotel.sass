@@ -59,7 +59,7 @@
     font-weight: 700
 .swiper-container
   width: 100%
-  height: 450px
+  height: 100%
   position: relative
   border-radius: 8px
   &::after
@@ -75,6 +75,7 @@
     z-index: 10
 .slider
   width: 728px
+  height: 450px
   &-button
     position: absolute
     top: 50%
@@ -101,7 +102,7 @@
   color: $light
   border-radius: 8px
   width: 100%
-  max-width: 350px
+  // max-width: 350px
   min-height: 210px
   padding: 28px
   &__info
@@ -159,6 +160,7 @@
   &__num
     margin-left: 8px
   &__button
+    // font-family: Nunito
     width: 100%
     font-weight: 600
     font-size: 14px
@@ -169,8 +171,10 @@
     min-height: 45px
     border: none
     cursor: pointer
+    outline: none
 .map
   width: 347px
   height: 213px
-  border-radius: 4px
+  overflow: hidden
+  border-radius: 10px
   background-color: #000
