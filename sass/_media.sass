@@ -10,6 +10,9 @@
         width: 100%
         height: 100%
         object-fit: cover
+  .card
+    width: 230px
+    height: 230px
 
 @media (max-width: 992px)
 
@@ -55,6 +58,14 @@
       font-size: 30px
       line-height: 38px
       margin-bottom: 50px
+  .activities
+    &-wrapper
+      flex-wrap: wrap
+    &__card
+      margin-bottom: 20px
+  .card
+    width: 340px
+    height: 250px
 
 @media (max-width: 768px)
 
@@ -143,6 +154,12 @@
           right: 50%
           margin-right: -65px
           transform: translate(50%, 0)
+  .activities
+    padding-top: 40px
+    padding-bottom: 60px
+  .card
+    width: 48%
+    height: 255px
 
 @media (max-width: 576px)
 
@@ -162,12 +179,20 @@
   .subscribe
     width: 100%
   .reviews
+    padding-bottom: 50px
     &__title
       font-size: 18px
       line-height: 23px
       margin-bottom: 42px
+  .card
+    width: 100%
 
 @media (max-width: 340px)
   .hotel
     &-slider
       height: 179px
+  .reviews
+    &__title
+      width: 245px
+      margin: auto
+      margin-bottom: 42px

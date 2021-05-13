@@ -411,4 +411,4 @@
 
 }(jQuery, window, document));
 
-$('.newsletter').parallax({imageSrc: '/img/newsletter-bg.jpg'},{speed: '0.8'});
+$('.newsletter').parallax({imageSrc: 'https://yakdm.ru/homeworks/tour-plan/img/newsletter-bg.jpg'},{speed: '0.8'});
