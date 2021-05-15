@@ -738,6 +738,171 @@ template {
   height: 10000px;
 }
 
+.packages {
+  padding: 40px 0 70px 0;
+}
+
+.packages__title {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 45px;
+  text-align: center;
+  text-transform: uppercase;
+  margin-top: 0;
+  margin-bottom: 65px;
+}
+
+.packages-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 30px;
+  row-gap: 30px;
+}
+
+.packages-card {
+  background-color: #0A223D;
+  color: #fff;
+  height: 500px;
+  border-radius: 8px;
+  position: relative;
+  overflow: hidden;
+}
+
+.packages-card__offer {
+  position: absolute;
+  background-color: #EC1F46;
+  color: #fff;
+  padding: 4px 9px;
+  top: 26px;
+  border-radius: 0px 4px 4px 0px;
+  min-width: 60px;
+}
+
+.packages-card__offer__text {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 8px;
+  line-height: 10px;
+}
+
+.packages-card__image {
+  height: 250px;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 8px 8px 0px 0px;
+}
+
+.packages-card__stars {
+  margin-bottom: 5px;
+}
+
+.packages-card__icon {
+  margin-right: 14px;
+}
+
+.packages-card__old-price {
+  text-decoration: line-through;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 18px;
+  margin-bottom: 5px;
+}
+
+.packages-card__new-price {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 30px;
+}
+
+.packages-card__info {
+  padding: 20px 21px 25px 32px;
+}
+
+.packages-card__info__title {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 23px;
+  margin-bottom: 27px;
+}
+
+.packages-card__info__text {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 22px;
+  margin-bottom: 34px;
+}
+
+.packages-card__info__room {
+  margin-bottom: 26px;
+}
+
+.packages-card__info__room-text {
+  margin-bottom: 11px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 15px;
+}
+
+.packages-card__info__price {
+  display: flex;
+  flex-direction: column;
+}
+
+.packages-card__info__bottom {
+  display: flex;
+  justify-content: space-between;
+}
+
+.packages-card__info__button {
+  font-family: Nunito;
+  min-width: 120px;
+  min-height: 40px;
+  padding: 11px 27px 10px 26px;
+  background-color: #EC1F46;
+  color: #fff;
+  border-radius: 4px;
+  cursor: pointer;
+  border: none;
+  outline: none;
+}
+
+.main-package {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  display: flex;
+}
+
+.main-package__offer {
+  position: absolute;
+  background-color: #EC1F46;
+  color: #fff;
+  padding: 8px 12px 7px 11px;
+  top: 26px;
+  min-width: 95px;
+}
+
+.main-package__offer__text {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 15px;
+}
+
+.main-package__image {
+  width: 366px;
+  border-radius: 8px 0px 0px 8px;
+}
+
+.main-package__info {
+  padding: 46px 21px 30px 44px;
+}
+
 .newsletter {
   position: relative;
   padding: 98px 0 87px 0;
@@ -1001,6 +1166,7 @@ template {
 }
 
 .card__button {
+  font-family: Nunito;
   font-style: normal;
   font-weight: bold;
   font-size: 16px;
@@ -1028,6 +1194,12 @@ template {
   .card {
     width: 230px;
     height: 230px;
+  }
+  .main-package-card__info {
+    padding: 20px 20px 15px 20px;
+  }
+  .main-package__image {
+    min-width: 50%;
   }
 }
 
@@ -1087,6 +1259,38 @@ template {
   .card {
     width: 340px;
     height: 250px;
+  }
+  .packages-card__info__text {
+    display: none;
+  }
+  .packages__title {
+    font-size: 32px;
+    margin-bottom: 60px;
+  }
+  .packages-wrapper {
+    grid-template-columns: 1fr 1fr;
+    column-gap: 20px;
+    row-gap: 20px;
+  }
+  .main-package {
+    flex-direction: column;
+  }
+  .main-package__info {
+    padding: 5px 21px 30px 25px;
+  }
+  .main-package-card {
+    flex-direction: column;
+    grid-column-start: 1;
+    grid-column-end: -1;
+  }
+  .main-package-card__info {
+    padding: 5px 23px 0 27px;
+  }
+  .main-package__image {
+    border-radius: 8px 8px 0px 0px;
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
   }
 }
 
@@ -1197,6 +1401,28 @@ template {
   .card {
     width: 48%;
     height: 255px;
+  }
+  .main-package {
+    grid-column-start: 1;
+    grid-column-end: -1;
+  }
+  .packages__title {
+    font-size: 24px;
+    margin-bottom: 30px;
+  }
+  .packages-wrapper {
+    grid-template-columns: 1fr;
+    column-gap: 20px;
+    row-gap: 20px;
+  }
+  .packages-card {
+    flex-direction: column;
+  }
+  .packages-card__info {
+    padding: 5px 20px 20px 15px;
+  }
+  .packages-card__image {
+    height: 250px;
   }
 }
 

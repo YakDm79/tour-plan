@@ -1,0 +1,168 @@
+.packages
+  padding: 40px 0 70px 0
+
+  &__title
+    font-style: normal
+    font-weight: bold
+    font-size: 36px
+    line-height: 45px
+    text-align: center
+    text-transform: uppercase
+    margin-top: 0
+    margin-bottom: 65px
+  &-wrapper
+    display: grid
+    grid-template-columns: 1fr 1fr 1fr
+    // grid-template-columns: repeat(auto-fit, minmax(320px, 1fr))
+    column-gap: 30px
+    row-gap: 30px
+  &-card
+    background-color: $dark
+    color: $light
+    height: 500px
+
+    border-radius: 8px
+    position: relative
+    overflow: hidden
+    // grid-column-start: 1
+    // grid-column-end: 3
+    &__offer
+      position: absolute
+      background-color: $primary
+      color: $light
+      padding: 4px 9px
+      top: 26px
+      border-radius: 0px 4px 4px 0px
+      min-width: 60px
+      &__text
+        font-style: normal
+        font-weight: 600
+        font-size: 8px
+        line-height: 10px
+    // &:nth-child(2)
+    //   grid-column-start: 1
+    //   grid-column-end: 3
+    &__image
+      // min-width: 366px
+      height: 250px
+      width: 100%
+      object-fit: cover
+      border-radius: 8px 8px 0px 0px
+    &__stars
+      margin-bottom: 5px
+    &__icon
+      margin-right: 14px
+    &__old-price
+      text-decoration: line-through
+      font-style: normal
+      font-weight: normal
+      font-size: 14px
+      line-height: 18px
+      margin-bottom: 5px
+    &__new-price
+      font-style: normal
+      font-weight: bold
+      font-size: 24px
+      line-height: 30px
+    &__info
+      padding: 20px 21px 25px 32px
+      &__title
+        font-style: normal
+        font-weight: bold
+        font-size: 18px
+        line-height: 23px
+        margin-bottom: 27px
+      &__text
+        font-style: normal
+        font-weight: normal
+        font-size: 14px
+        line-height: 22px
+        margin-bottom: 34px
+      &__room
+        margin-bottom: 26px
+      &__room-text
+        margin-bottom: 11px
+        font-style: normal
+        font-weight: normal
+        font-size: 12px
+        line-height: 15px
+      &__price
+        display: flex
+        flex-direction: column
+      &__bottom
+        display: flex
+        justify-content: space-between
+      &__button
+        font-family: Nunito
+        min-width: 120px
+        min-height: 40px
+        padding: 11px 27px 10px 26px
+        background-color: $primary
+        color: $light
+        border-radius: 4px
+        cursor: pointer
+        border: none
+        outline: none
+.main-package
+  grid-column-start: 1
+  grid-column-end: 3
+  display: flex
+  &__offer
+    position: absolute
+    background-color: $primary
+    color: $light
+    padding: 8px 12px 7px 11px
+    top: 26px
+
+    min-width: 95px
+    &__text
+      font-style: normal
+      font-weight: 600
+      font-size: 12px
+      line-height: 15px
+  &__image
+    width: 366px
+    border-radius: 8px 0px 0px 8px
+  &__info
+    padding: 46px 21px 30px 44px
+
+// &-card-small
+  //   background-color: $dark
+  //   color: $light
+  //   height: 500px
+  //   border-radius: 8px
+  //   position: relative
+  // &__info
+  //   padding: 30px 21px 25px 32px
+  //   &__title
+  //     font-style: normal
+  //     font-weight: bold
+  //     font-size: 18px
+  //     line-height: 23px
+  //     margin-bottom: 23px
+  //     &__room
+  //       margin-bottom: 24px
+  //     &__price
+  //       display: flex
+  //       flex-direction: column
+  //     &__bottom
+  //       display: flex
+  //       justify-content: space-between
+  //   &__image
+  //     border-radius: 8px 8px 0px 0px
+  //     height: 250px
+  //     width: 100%
+  //     object-fit: cover
+  //   &__offer
+  //     position: absolute
+  //     background-color: $primary
+  //     color: $light
+  //     padding: 4px 9px
+  //     top: 26px
+  //     border-radius: 0px 4px 4px 0px
+  //     min-width: 60px
+  //     &__text
+  //       font-style: normal
+  //       font-weight: 600
+  //       font-size: 8px
+  //       line-height: 10px

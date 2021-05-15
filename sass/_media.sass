@@ -13,6 +13,12 @@
   .card
     width: 230px
     height: 230px
+  .main-package
+    &-card
+      &__info
+        padding: 20px 20px 15px 20px
+    &__image,
+      min-width: 50%
 
 @media (max-width: 992px)
 
@@ -67,6 +73,35 @@
     width: 340px
     height: 250px
 
+  .packages
+    &-card
+      &__info
+        &__text
+          display: none
+    &__title
+      font-size: 32px
+      margin-bottom: 60px
+    &-wrapper
+      grid-template-columns: 1fr 1fr
+      // grid-template-columns: none
+      column-gap: 20px
+      row-gap: 20px
+  .main-package
+    flex-direction: column
+    &__info
+      padding: 5px 21px 30px 25px
+    &-card
+      flex-direction: column
+      grid-column-start: 1
+      grid-column-end: -1
+      &__info
+        padding: 5px 23px 0 27px
+
+    &__image
+      border-radius: 8px 8px 0px 0px
+      width: 100%
+      height: 250px
+      object-fit: cover
 @media (max-width: 768px)
 
   .container
@@ -160,6 +195,29 @@
   .card
     width: 48%
     height: 255px
+  .main-package
+    grid-column-start: 1
+    grid-column-end: -1
+  .packages
+    &__title
+      font-size: 24px
+      margin-bottom: 30px
+    &-wrapper
+      // grid-template-columns: none
+      grid-template-columns: 1fr
+      column-gap: 20px
+      row-gap: 20px
+    &-card
+      // display: none
+      flex-direction: column
+      // grid-column-start: 1
+      // grid-column-end: none
+      &__info
+        padding: 5px 20px 20px 15px
+
+      &__image
+        // width: 100%
+        height: 250px
 
 @media (max-width: 576px)
 
