@@ -1,5 +1,7 @@
 .packages
   padding: 40px 0 70px 0
+  // p
+  //   margin: 0
 
   &__title
     font-style: normal
@@ -28,9 +30,10 @@
     // grid-column-end: 3
     &__offer
       position: absolute
+      text-align: center
       background-color: $primary
       color: $light
-      padding: 4px 9px
+      padding: 0 9px 4px 9px
       top: 26px
       border-radius: 0px 4px 4px 0px
       min-width: 60px
@@ -65,7 +68,10 @@
       font-size: 24px
       line-height: 30px
     &__info
-      padding: 20px 21px 25px 32px
+      padding: 30px 21px 20px 32px
+      display: flex
+      flex-direction: column
+      justify-content: space-between
       &__title
         font-style: normal
         font-weight: bold
@@ -77,9 +83,9 @@
         font-weight: normal
         font-size: 14px
         line-height: 22px
-        margin-bottom: 34px
+        margin-bottom: 40px
       &__room
-        margin-bottom: 26px
+        margin-bottom: 10px
       &__room-text
         margin-bottom: 11px
         font-style: normal
@@ -109,9 +115,10 @@
   display: flex
   &__offer
     position: absolute
+    text-align: center
     background-color: $primary
     color: $light
-    padding: 8px 12px 7px 11px
+    padding: 9px 16px
     top: 26px
 
     min-width: 95px
@@ -125,6 +132,11 @@
     border-radius: 8px 0px 0px 8px
   &__info
     padding: 46px 21px 30px 44px
+    display: flex
+    flex-direction: column
+    justify-content: space-between
+    &__title
+      margin-bottom: 0
 
 // &-card-small
   //   background-color: $dark
