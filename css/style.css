@@ -1221,6 +1221,10 @@ template {
   grid-row: 1 / 4;
 }
 
+.footer__legal {
+  justify-self: end;
+}
+
 .footer__social-links {
   display: flex;
   align-items: center;
@@ -1581,11 +1585,12 @@ template {
     left: 0;
     right: 0;
     bottom: 0;
-    top: 78px;
+    top: 72px;
     padding-top: 30px;
   }
   .navbar-bottom--visible {
     display: block;
+    overflow: scroll;
   }
   .navbar-menu {
     flex-direction: column;
@@ -1784,8 +1789,18 @@ template {
     grid-column: 1;
   }
   .footer__social-network {
+    flex-direction: column;
     grid-row: 2;
     grid-column: 1;
+  }
+  .footer__social-links {
+    justify-content: start;
+  }
+  .footer__title--inline {
+    margin-bottom: 20px;
+  }
+  .footer__link {
+    margin-right: 10px;
   }
   .footer__additional {
     grid-row: 3;
@@ -1798,6 +1813,7 @@ template {
   .footer__legal {
     grid-row: 5;
     grid-column: 1;
+    justify-self: start;
   }
   .footer__contact-details {
     grid-row: 6;
