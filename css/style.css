@@ -401,6 +401,10 @@ template {
   font-weight: 700;
 }
 
+.navbar-menu__item--mobile--visible, .navbar-menu__user--mobile--visible {
+  display: none;
+}
+
 .logo {
   width: 177px;
 }
@@ -1551,8 +1555,46 @@ template {
   .logo {
     width: 99px;
   }
-  .navbar__search, .navbar-menu, .navbar__user {
+  body {
+    padding-top: 78px;
+  }
+  .navbar--mobile--fixed {
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    z-index: 99;
+  }
+  .navbar__user--mobile--hidden, .navbar__search--mobile--hidden {
     display: none;
+  }
+  .navbar__user--mobile--visible, .navbar__search--mobile--visible {
+    display: flex;
+  }
+  .navbar__user {
+    flex-direction: column;
+    justify-content: center;
+  }
+  .navbar-bottom {
+    display: none;
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 78px;
+    padding-top: 30px;
+  }
+  .navbar-bottom--visible {
+    display: block;
+  }
+  .navbar-menu {
+    flex-direction: column;
+  }
+  .navbar-menu__item {
+    margin-bottom: 20px;
+  }
+  .navbar-menu__item--mobile--visible {
+    display: block;
   }
   .navbar-top {
     padding-top: 28px;
@@ -1574,6 +1616,11 @@ template {
     width: 16px;
     height: 1px;
     background-color: #333333;
+  }
+  .user__name--light {
+    color: #fff;
+    margin-left: 0;
+    margin-top: 10px;
   }
   .stars {
     flex-basis: auto;
@@ -1785,6 +1832,12 @@ template {
   }
   .footer__bottom-list {
     margin-bottom: 10px;
+  }
+}
+
+@media (max-width: 350px) {
+  .search__input {
+    width: 100%;
   }
 }
 
