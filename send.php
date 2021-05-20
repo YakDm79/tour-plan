@@ -15,6 +15,7 @@ if(isset($_POST['email'])){
     // если есть что-то в $_POST['email']
     $title = "Новая подписка Tour Plan";
     $body = 'User mail: ' . $_POST['email'];
+    
 } else {
     // если нет, отправлена форма с телефоном и пр.
     $title = "Новое обращение Tour Plan";
@@ -23,7 +24,8 @@ if(isset($_POST['email'])){
     <b>Имя:</b> $name<br>
     <b>Телефон:</b> $phone<br><br>
     <b>Сообщение:</b><br>$message
-"
+    "
+    
 ;}
 
 
@@ -72,4 +74,14 @@ else {$result = "error";}
 }
 
 // Отображение результата
-header('Location: thankyou.html');
+// header('Location: thankyou.html');
+
+if(isset($_POST['email'])){
+    // если есть что-то в $_POST['email']
+    header('Location: email.html');
+    
+} else {
+    // если нет, отправлена форма с телефоном и пр.
+    header('Location: thankyou.html');
+    
+;}
