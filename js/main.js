@@ -70,5 +70,13 @@ menuButton.addEventListener('click', function () {
 		if (e.keyCode === 27) {
 		    closeModalKey();
 		}
-	});
+  });
+    // Закрытие модального окна по клику за его пределами  
+  $(document).mouseup(function (e) {
+    var modalOverlay = $(".modal__overlay");
+    var modalDialog = $(".modal__dialog");
+    if (!modalDialog.is(e.target) && modalDialog.has(e.target).length === 0){
+    closeModalKey();
+    }
+  });
 });

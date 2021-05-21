@@ -1454,6 +1454,7 @@ template {
 .modal__message {
   width: 100%;
   min-width: 123px;
+  min-height: 123px;
   resize: none;
   margin-bottom: 15px;
 }
