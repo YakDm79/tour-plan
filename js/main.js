@@ -80,7 +80,7 @@ $(document).ready(function () {
     }
   });
   // Обработка форм
-  $('.phone').mask('0-000-000-0000');
+  $('.phone').mask('+0 (000) 000-00-00');
   $(".form").each(function () {
     $(this).validate({
       errorClass: "invalid",
@@ -91,7 +91,7 @@ $(document).ready(function () {
         },
         phone: {
           required: true,
-          minlength: 14,
+          minlength: 18,
         },
       },
       messages: {
@@ -105,7 +105,7 @@ $(document).ready(function () {
         },
         phone: {
           required: "Please, enter your phone number",
-          minlength: jQuery.validator.format("Example number: 1-234-567-1111"),
+          minlength: jQuery.validator.format("Example: +1 (234) 567-11-11"),
         },
       },
     });
