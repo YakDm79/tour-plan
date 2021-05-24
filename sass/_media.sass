@@ -2,6 +2,8 @@
 
   .container
     max-width: 960px
+  .invalid
+    font-size: 14px
   .hotel__slider
     width: 590px
   .hotel
@@ -326,7 +328,9 @@
         margin-bottom: 10px
   .footer
     &__input
-      flex-basis: 100%
+      margin-top: 15px
+      &-group
+        flex-basis: 100%
     &__bottom
       &-list
         margin-left: 0
@@ -340,8 +344,10 @@
       display: grid
       justify-content: center
       grid-template-columns: 90%
+    &__button
+      grid-row: 10
     &__info
-      grid-row: 5
+      grid-row: 9
       margin-bottom: 15px
 @media (max-width: 576px)
 
@@ -424,6 +430,8 @@
         margin-bottom: 10px
       &-link
         // font-size: 14px
+  .invalid
+    font-size: 12px
   .modal
     &__dialog
       width: 80%
@@ -432,7 +440,8 @@
 @media (max-width: 350px)
   .search
     &__input
-      width: 100%
+      &-group
+        width: 100%
   .modal
     &-form
       grid-template-columns: 100%
