@@ -80,7 +80,7 @@ $(document).ready(function () {
     }
   });
   // Обработка форм
-  $('.phone').mask('+0 (000) 000-00-00');
+  $(".phone").mask("+0 (000) 000-00-00");
   $(".form").each(function () {
     $(this).validate({
       errorClass: "invalid",
@@ -100,7 +100,7 @@ $(document).ready(function () {
           minlength: jQuery.validator.format("At least 2 characters required"),
         },
         email: {
-          required: "We need your email address to contact you",
+          required: "Please, enter your e-mail",
           email: "Your email address must be in the format of name@domain.com",
         },
         phone: {
@@ -110,4 +110,5 @@ $(document).ready(function () {
       },
     });
   });
+  AOS.init();
 });
