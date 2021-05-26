@@ -9,12 +9,13 @@ $name = $_POST['name'];
 $phone = $_POST['phone'];
 $message = $_POST['message'];
 $email = $_POST['email'];
+$subscribe = $_POST['subscribe'];
 
 // в зависимости от пришедшей формы формируем сообщение:
-if(isset($_POST['email'])){
+if(isset($_POST['subscribe'])){
     // если есть что-то в $_POST['email']
     $title = "Новая подписка Tour Plan";
-    $body = 'User mail: ' . $_POST['email'];
+    $body = 'User mail: ' . $_POST['subscribe'];
     
 } else {
     // если нет, отправлена форма с телефоном и пр.
@@ -76,7 +77,7 @@ else {$result = "error";}
 // Отображение результата
 // header('Location: thankyou.html');
 
-if(isset($_POST['email'])){
+if(isset($_POST['subscribe'])){
     // если есть что-то в $_POST['email']
     header('Location: email.html');
     
