@@ -1,5 +1,6 @@
 .packages
-  padding: 40px 0 70px 0
+  padding: 40px 0 50px 0
+  margin-bottom: 20px
   // p
   //   margin: 0
 
@@ -22,12 +23,14 @@
     background-color: $dark
     color: $light
     height: 500px
-
     border-radius: 8px
     position: relative
     overflow: hidden
     // grid-column-start: 1
     // grid-column-end: 3
+    &__stars
+      &__item
+        margin-right: -3px
     &__offer
       position: absolute
       text-align: center
@@ -52,9 +55,9 @@
       object-fit: cover
       border-radius: 8px 8px 0px 0px
     &__stars
-      margin-bottom: 5px
+      margin-bottom: 0
     &__icon
-      margin-right: 14px
+      margin-right: 12px
     &__old-price
       text-decoration: line-through
       font-style: normal
@@ -68,7 +71,7 @@
       font-size: 24px
       line-height: 30px
     &__info
-      padding: 30px 21px 20px 32px
+      padding: 27px 21px 20px 32px
       display: flex
       flex-direction: column
       justify-content: space-between
@@ -77,7 +80,7 @@
         font-weight: bold
         font-size: 18px
         line-height: 23px
-        margin-bottom: 27px
+        margin-bottom: 23px
       &__text
         font-style: normal
         font-weight: normal
@@ -85,9 +88,9 @@
         line-height: 22px
         margin-bottom: 40px
       &__room
-        margin-bottom: 10px
+        margin-bottom: 0px
       &__room-text
-        margin-bottom: 11px
+        margin-bottom: 10px
         font-style: normal
         font-weight: normal
         font-size: 12px
@@ -98,10 +101,16 @@
       &__bottom
         display: flex
         justify-content: space-between
+        margin-top: 13px
       &__button
         font-family: Nunito
+        font-style: normal
+        font-weight: 600
+        font-size: 14px
+        line-height: 19px
         min-width: 120px
-        min-height: 40px
+        max-height: 40px
+        margin-top: 13px
         padding: 11px 27px 10px 26px
         background-color: $primary
         color: $light
@@ -113,6 +122,8 @@
   grid-column-start: 1
   grid-column-end: 3
   display: flex
+  &__description
+    margin-top: -15px
   &__offer
     position: absolute
     text-align: center
@@ -131,12 +142,12 @@
     width: 366px
     border-radius: 8px 0px 0px 8px
   &__info
-    padding: 46px 21px 30px 44px
+    padding: 37px 21px 32px 44px
     display: flex
     flex-direction: column
     justify-content: space-between
     &__title
-      margin-bottom: 0
+      margin-bottom: 13px
 
 // &-card-small
   //   background-color: $dark
