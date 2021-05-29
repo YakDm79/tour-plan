@@ -35,7 +35,8 @@
       margin-top: 3px
   &__contact-details
     grid-column: span 2
-    margin-top: 7px
+    margin-top: 13px
+    margin-left: -2px
   &__contact-form
     grid-column: span 2
     padding-left: 6px
@@ -46,12 +47,14 @@
     align-items: center
   &__text
     color: $footer-text-color
-    margin-bottom: 22px
+    margin-bottom: 18px
+    margin-top: -10px
     font-style: normal
-    font-weight: bold
-    font-size: 12px
-    line-height: 15px
-    margin-top: -6px
+    font-weight: normal
+    font-size: 14px
+    line-height: 160%
+    &-wrapper
+      padding-top: 5px
   &__ul
     padding: 0
     padding-top: 4px
@@ -64,10 +67,14 @@
     line-height: 23px
     margin: 0 0 16px 0
     text-transform: uppercase
+    &__additional
+      margin-bottom: 12px
+    &__legal
+      margin-bottom: 13px
     &--inline
       margin: 0 43px 0 0
     &--mb-3
-      margin-bottom: 31px
+      margin-bottom: 35px
   &__item
     display: flex
     align-items: flex-start
@@ -98,7 +105,7 @@
     font-weight: normal
     font-size: 12px
     line-height: 15px
-    color: $footer-text-color
+    color: $dark
     &-group
       flex-basis: 47%
       align-self: end
@@ -113,7 +120,9 @@
     font-weight: normal
     font-size: 12px
     line-height: 15px
-    color: $footer-text-color
+    color: $dark
+    &::placeholder
+      color: $footer-text-color
   &__additional
     margin-left: 6px
   &__button
@@ -129,18 +138,30 @@
     line-height: 15px
     color: #E0E0E0
   &__icon
-    width: 24px
+    // width: 24px
+    &-wrapper
+      margin-right: 5px
+      padding-left: 3px
+    &__map
+      width: 24px
+    &__phone
+      width: 23px
+    &__email
+      width: 20px
   &__bottom
-    display: grid
-    grid-template-columns: repeat(5, 1fr)
+    display: flex
+    // display: grid
+    // grid-template-columns: repeat(5, 1fr)
     padding-top: 3px
     &-list
       grid-column: 3 / 6
-      margin-left: 24px
+      margin-left: 414px
+      margin-right: 270px
+      // width: 283px
     &-link
       // display: block
-      color: $footer-text-color
-      margin-right: 13px
+      color: $light
+      margin-right: 8px
       text-decoration: none
       font-style: normal
       font-weight: normal
@@ -150,6 +171,8 @@
     &-pay
       width: 136px
       height: 22px
+      object-fit: cover
       justify-self: end
       grid-column: 6
+      padding-bottom: 5px
       // margin-top: -4px
