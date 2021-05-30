@@ -29,7 +29,7 @@
     visibility: hidden
     opacity: 0
     transition: opacity 0.2s
-    height: 524px
+    // height: 524px
     overflow: auto
     &--visible
       visibility: visible
@@ -53,12 +53,15 @@
       color: $footer-text-color
   &__button
     margin-top: 15px
+    min-width: 160px
+    min-height: 54px
   &__info
     font-style: normal
     font-weight: bold
     font-size: 12px
     line-height: 15px
     color: #E0E0E0
+    height: 0
   &__title
     font-style: normal
     font-weight: bold
@@ -72,3 +75,4 @@
     justify-content: space-between
     flex-wrap: wrap
     align-items: center
+    align-content: center
