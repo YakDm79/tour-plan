@@ -18,10 +18,9 @@ $(document).ready(function () {
       keyboard: { enabled: !0, onlyInViewport: !1 },
     });
   document.querySelector(".menu-button").addEventListener("click", function () {
-    console.log("Клик по кнопке меню"),
-      document
-        .querySelector(".navbar-bottom")
-        .classList.toggle("navbar-bottom--visible");
+    document
+      .querySelector(".navbar-bottom")
+      .classList.toggle("navbar-bottom--visible");
   });
   var e = $("[data-toggle=modal]"),
     o = $(".modal__close");
